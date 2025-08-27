@@ -16,13 +16,23 @@ makeId('products-section').addEventListener('click', (event)=>{
 
 
     
-    // copy increase
+    // copy count and alert and copy number in clipboard
     if(event.target.id === 'copy-btn' || event.target.parentNode.id === 'copy-btn'){
-        // alert('The number is copy')
-        // console.log();
 
-        let copyNumber = event.target.parentNode.parentNode.children[2].innerText
-        navigator.clipboard.writeText(copyNumber)
+        // alert
+        alert('The number is copy')
+
+        // copy number
+        if(event.target.id === 'copy-btn'){
+            const copyNumber = event.target.parentNode.parentNode.children[2].innerText.trim();
+            navigator.clipboard.writeText(copyNumber)
+        }else if(event.target.parentNode.id === 'copy-btn'){
+            console.log('hello');
+            const copyNumber = event.target.parentNode.parentNode.parentNode.children[2].innerText.trim();
+            navigator.clipboard.writeText(copyNumber)
+        }
+
+        // how may copy count 
         let copy = document.getElementsByClassName('copy-inner');
         for(let i of copy){
             i.innerText = Number(i.innerText) + 1;
