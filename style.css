@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tiro+Bangla:ital@0;1&display=swap');
 
+@import "tailwindcss";
+
 .font-bangla{
     font-family: "Tiro Bangla", serif;
-}
+};
 
 .font-hind{
     font-family: "Hind Madurai", sans-serif;
-}
+};
 
 .font-roboto{
       font-family: "Roboto", sans-serif;
 }
 
-@import 'tailwindcss';
+@media only screen  and (max-width:500px) {
+    .minm{
+        place-items: stretch;
+    }
+}

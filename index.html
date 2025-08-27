@@ -20,7 +20,7 @@
     <header class="font-hind">
 
         <!--navbar  -->
-      <nav class="py-6 px-15 flex flex-row items-center justify-between bg-white ">
+      <nav class="py-6 px-7 sm:px-16 flex flex-col sm:flex-row gap-3.5 items-center justify-between bg-white ">
 
         <!-- logo and name -->
         <div class="flex items-center justify-center gap-2.5">
@@ -31,7 +31,7 @@
         </div>
 
         <!-- count of heart coin and copy -->
-        <div class="flex items-center justify-center gap-5">
+        <div class="items-center justify-center gap-5 hidden sm:flex">
             
             <!-- heart -->
           <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
@@ -69,14 +69,39 @@
 
        </section>
 
+        <!--just mobile device count of heart coin and copy -->
+        <div class="flex  items-center justify-center gap-5 sm:hidden mt-7 px-2">
+            
+            <!-- heart -->
+          <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
+
+            <h4>0</h4>
+            <img class="w-[30px]" src="./assets/heart.png" alt="heart" />
+
+          </div>
+
+          <!-- coin -->
+          <div class="flex items-center justify-center w-[106px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5 ">
+
+              <h4>100</h4>
+            <img class="w-[30px]" src="./assets/coin.png" alt="coin" />
+
+          </div>
+
+          <!-- copy -->
+          <div class="flex items-center justify-center w-[106px] p-3 bg-[#00A63E] text-white rounded-[50px] gap-2.5">
+              <h4>2 Copy</h4>
+          </div>
+        </div>
     </header>
 
     <!-- main -->
-     <main class="my-12 mx-16 flex gap-7">
+     <main class="my-12 mx-7 sm:mx-16 flex flex-col sm:flex-row gap-7">
         <!-- cart container -->
-         <section class="grid grid-cols-2 lg:grid-cols-3 gap-4  flex-4/5">
+         <section class="grid grid-cols-1 place-items-center minm sm:place-items-stretch lg:grid-cols-2 xl:grid-cols-3 gap-4  flex-4/5">
+
             <!-- cart 1 -->
-             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow-xl">
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
                 <!-- emergency icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
@@ -93,7 +118,7 @@
                  <div>
                     <h2 class="font-bangla text-2xl font-bold">জাতীয় জরুরি সেবা</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">National Emergency</p>
-                    <h1 class="text-3xl font-bold">999</h1>
+                    <h1 class="text-3xl font-bold mb-0.5">999</h1>
                     <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">সার্বজনীন</p>
 
                     <!-- button -->
@@ -105,13 +130,14 @@
                  </div>
 
              </div>
+
             <!-- cart 2 -->
-             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow-xl">
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
                 <!-- emergency icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
-                        <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                        <img class="w-[30px]" src="./assets/police.png" alt="">
                     </figure>
 
                     <!-- icon -->
@@ -121,10 +147,10 @@
                 </div>
                 <!-- card content -->
                  <div>
-                    <h2 class="font-bangla text-2xl font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="text-[#5C5C5C] text-lg mb-6">National Emergency</p>
-                    <h1 class="text-3xl font-bold">999</h1>
-                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">সার্বজনীন</p>
+                    <h2 class="font-bangla text-2xl font-bold">পুলিশ</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">police</p>
+                    <h1 class="text-3xl font-bold mb-0.5">8484</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">পুলিশ</p>
 
                     <!-- button -->
                     <div class="flex gap-2 items-center justify-between">
@@ -135,8 +161,197 @@
                  </div>
 
              </div>
+
             <!-- cart 3 -->
-             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow-xl">
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                <!-- emergency icon and heart icon -->
+                <div class="flex items-center justify-between ">
+                    <!-- img -->
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                        <img class="w-[30px]" src="./assets/fire-service.png" alt="">
+                    </figure>
+
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+                <!-- card content -->
+                 <div>
+                    <h2 class="font-bangla text-2xl font-bold">ফায়ার সার্ভিস</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Fire Service</p>
+                    <h1 class="text-3xl font-bold mb-0.5">1510</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">ফায়ার</p>
+
+                    <!-- button -->
+                    <div class="flex gap-2 items-center justify-between">
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                        
+                    </div>
+                 </div>
+
+             </div>
+
+            <!-- cart 4-->
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                <!-- emergency icon and heart icon -->
+                <div class="flex items-center justify-between ">
+                    <!-- img -->
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                        <img class="w-[30px]" src="./assets/ambulance.png" alt="">
+                    </figure>
+
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+                <!-- card content -->
+                 <div>
+                    <h2 class="font-bangla text-2xl font-bold">অ্যাম্বুলেন্স</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Ambulance</p>
+                    <h1 class="text-3xl font-bold mb-0.5">1994-999999</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">স্বাস্থ্য</p>
+
+                    <!-- button -->
+                    <div class="flex gap-2 items-center justify-between">
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                        
+                    </div>
+                 </div>
+
+             </div>
+
+             
+             <!-- cart 5-->
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                <!-- emergency icon and heart icon -->
+                <div class="flex items-center justify-between ">
+                    <!-- img -->
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                        <img class="w-[30px]" src="./assets/brac.png" alt="">
+                    </figure>
+                    
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+                <!-- card content -->
+                 <div>
+                    <h2 class="font-bangla text-2xl font-bold">ব্র্যাক</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Brac</p>
+                    <h1 class="text-3xl font-bold mb-0.5">16445</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">এনজিও</p>
+                    
+                    <!-- button -->
+                    <div class="flex gap-2 items-center justify-between">
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- cart 6-->
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                <!-- emergency icon and heart icon -->
+                <div class="flex items-center justify-between ">
+                    <!-- img -->
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                        <img class="w-[30px]" src="./assets/ambulance.png" alt="">
+                    </figure>
+
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+                <!-- card content -->
+                 <div>
+                    <h2 class="font-bangla text-2xl font-bold">নারী ও শিশু সহায়তা</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Women & Child Helpline</p>
+                    <h1 class="text-3xl font-bold mb-0.5">109</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">সহায়তা</p>
+
+                    <!-- button -->
+                    <div class="flex gap-2 items-center justify-between">
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                        
+                    </div>
+                 </div>
+
+             </div>
+
+             <!-- cart 7 -->
+              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                 <!-- emergency icon and heart icon -->
+                 <div class="flex items-center justify-between ">
+                     <!-- img -->
+                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                         <img class="w-[30px]" src="./assets/emergency.png" alt="">
+                     </figure>
+ 
+                     <!-- icon -->
+                     <div>
+                         <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                     </div>
+                 </div>
+                 <!-- card content -->
+                  <div>
+                     <h2 class="font-bangla text-2xl font-bold">দুদক</h2>
+                     <p class="text-[#5C5C5C] text-lg mb-6">Anti-Corruption</p>
+                     <h1 class="text-3xl font-bold mb-0.5">106</h1>
+                     <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">সরকারি</p>
+ 
+                     <!-- button -->
+                     <div class="flex gap-2 items-center justify-between">
+                         <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                         <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                         
+                     </div>
+                  </div>
+ 
+              </div>
+
+            <!-- cart 8 -->
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
+                <!-- emergency icon and heart icon -->
+                <div class="flex items-center justify-between ">
+                    <!-- img -->
+                    <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
+                        <img class="w-[30px]" src="./assets/Bangladesh-Railway.png" alt="">
+                    </figure>
+
+                    <!-- icon -->
+                    <div>
+                        <i class="fa-regular fa-heart text-2xl cursor-pointer"></i>
+                    </div>
+                </div>
+                <!-- card content -->
+                 <div>
+                    <h2 class="font-bangla text-2xl font-bold">বাংলাদেশ রেলওয়ে</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Bangladesh Railway</p>
+                    <h1 class="text-3xl font-bold mb-0.5">163</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">পরিবহন</p>
+
+                    <!-- button -->
+                    <div class="flex gap-2 items-center justify-between">
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-[#5C5C5C]"><i class="fa-regular fa-copy"></i> copy</button>
+                        <button class="py-2.5 cursor-pointer w-[182px] rounded-lg border text-[1rem] text-white bg-[#00A63E] "><i class="fa-solid fa-phone"></i> Call</button>
+                        
+                    </div>
+                 </div>
+
+             </div>
+
+
+            <!-- cart 9 -->
+             <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
                 <!-- emergency icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
@@ -151,10 +366,10 @@
                 </div>
                 <!-- card content -->
                  <div>
-                    <h2 class="font-bangla text-2xl font-bold">জাতীয় জরুরি সেবা</h2>
-                    <p class="text-[#5C5C5C] text-lg mb-6">National Emergency</p>
-                    <h1 class="text-3xl font-bold">999</h1>
-                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">সার্বজনীন</p>
+                    <h2 class="font-bangla text-2xl font-bold">বিদ্যুৎ বিভ্রাট</h2>
+                    <p class="text-[#5C5C5C] text-lg mb-6">Electricity Outage</p>
+                    <h1 class="text-3xl font-bold mb-0.5">16216</h1>
+                    <p class="font-bangla text-lg text-[#5C5C5C] py-1.5 px-4 bg-[#F2F2F2] inline-block rounded-4xl mb-6">বিদ্যুৎ</p>
 
                     <!-- button -->
                     <div class="flex gap-2 items-center justify-between">
@@ -165,11 +380,31 @@
                  </div>
 
              </div>
+
          </section>
 
          <!-- history container -->
-          <aside class="bg-amber-200 flex-1/5 p-5">
+          <aside class="shadow bg-white w-full  sm:w-[353px] p-5 rounded-xl">
+            
+            <!-- history clean -->
+            <div class="flex items-center justify-between gap-2.5">
+                <h3 class="text-xl font-medium "><i class="fa-regular fa-clock text-2xl mr-0.5"></i>Call History</h3>
 
+                <button class="bg-[#00A63E] rounded-4xl text-white py-3.5 px-9 cursor-pointer text-[1rem] font-semibold">Clear</button>
+            </div>
+
+            <!-- history list  -->
+             <ul class="mt-4">
+                <li class="flex items-center justify-between text-lg text-black p-4 rounded-lg bg-[#FAFAFA] mb-2">
+                    <div>
+                        <h4 class="font-bangla">জাতীয় জরুরি সেবা</h4>
+                        <p class="text-[#5C5C5C]">999</p>
+                    </div>
+                    <div>
+                        11:36:25
+                    </div>
+                </li>
+             </ul>
           </aside>
      </main>
   </body>
