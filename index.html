@@ -13,66 +13,71 @@
 
     <!-- tailwind cdn -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+     <!-- favicon -->
+      <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
   </head>
   <body class="bg-[#F5FFF6] max-w-[1920px] mx-auto">
+
     <!-- header section -->
     <header class="font-hind">
 
         <!--navbar  -->
-      <nav class="py-6 px-7 sm:px-16 flex flex-col sm:flex-row gap-3.5 items-center justify-between bg-white ">
+         <nav class="py-6 px-7 sm:px-16 flex flex-col sm:flex-row gap-3.5 items-center justify-between bg-white ">
 
-        <!-- logo and name -->
-        <div class="flex items-center justify-center gap-2.5">
+            <!-- logo and name -->
+            <div class="flex items-center justify-center gap-2.5">
 
-          <img class="w-[50px]" src="./assets/logo.png" alt="logo"/>
-          <h3 class="text-2xl leading-6 font-bold text-[#006747] ">Emergency <br/>Service</h3>
+                <img class="w-[50px]" src="./assets/logo.png" alt="logo"/>
+                <h3 class="text-2xl leading-6 font-bold text-[#006747] ">Emergency <br/>Service</h3>
 
-        </div>
+            </div>
 
-        <!-- count of heart coin and copy -->
-        <div class="items-center justify-center gap-5 hidden sm:flex">
+            <!-- count of heart, coin and copy -->
+            <div class="items-center justify-center gap-5 hidden sm:flex">
             
-            <!-- heart -->
-          <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
+                <!-- heart -->
+                <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
 
-            <h4 class="heart-btn">0</h4>
-            <img class="w-[30px]" src="./assets/heart.png" alt="heart" />
+                    <h4 class="heart-btn">0</h4>
+                    <img class="w-[30px]" src="./assets/heart.png" alt="heart" />
 
-          </div>
+                </div>
 
-          <!-- coin -->
-          <div class="flex items-center justify-center w-[106px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
+                <!-- coin -->
+                <div class="flex items-center justify-center w-[106px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
 
-              <h4 class="coin">100</h4>
-            <img class="w-[30px]" src="./assets/coin.png" alt="coin" />
+                    <h4 class="coin">100</h4>
+                    <img class="w-[30px]" src="./assets/coin.png" alt="coin" />
 
-          </div>
+                </div>
 
-          <!-- copy -->
-          <div class="flex items-center justify-center w-[106px] p-3 bg-[#00A63E] text-white rounded-[50px] gap-2.5">
-              <h4><span class="copy-inner">0</span> Copy</h4>
-          </div>
-        </div>
+                <!-- copy -->
+                <div class="flex items-center justify-center w-[106px] p-3 bg-[#00A63E] text-white rounded-[50px] gap-2.5">
+                    <h4><span class="copy-inner">0</span> Copy</h4>
+                </div>
+            </div>
 
-      </nav>
+        </nav>
 
-      <!-- hero -->
-       <section class="py-6 px-7 md:px-15 bg-gradient-to-r from-0% from-[#013223] via-50% via-[#006747] to-100% to-[#013223] text-white flex flex-col items-center justify-center gap-3 text-center">
+        <!-- hero -->
+        <section class="py-6 px-7 md:px-15 bg-gradient-to-r from-0% from-[#013223] via-50% via-[#006747] to-100% to-[#013223] text-white flex flex-col items-center justify-center gap-3 text-center">
 
-        <!-- img -->
-        <img class="w-[90px]" src="./assets/logo-dark.png" alt="">
-        <!-- title -->
-        <h1 class="font-bangla font-semibold text-[30px] md:text-[40px]">জরুরি সেবা ডিরেক্টর</h1>
-        <!-- subtitle -->
-        <p class="text-xl font-semibold ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+            <!-- img -->
+            <img class="w-[90px]" src="./assets/logo-dark.png" alt="">
+            <!-- title -->
+            <h1 class="font-bangla font-semibold text-[30px] md:text-[40px]">জরুরি সেবা ডিরেক্টর</h1>
+            <!-- subtitle -->
+            <p class="text-xl font-semibold ">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
 
-       </section>
+        </section>
 
-        <!--just mobile device count of heart coin and copy -->
+        <!--just mobile device count of heart, coin and copy -->
         <div class="flex  items-center justify-center gap-5 sm:hidden mt-7 px-2">
             
             <!-- heart -->
-          <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
+            <div class="flex items-center justify-center w-[123px] p-3 bg-[#41ff6b1a] rounded-[50px] gap-2.5">
 
             <h4 class="heart-btn">0</h4>
             <img class="w-[30px]" src="./assets/heart.png" alt="heart" />
@@ -96,12 +101,14 @@
 
     <!-- main -->
      <main class="my-12 mx-7 sm:mx-16 flex flex-col sm:flex-row gap-7">
+
         <!-- cart container -->
-         <section id="products-section" class="grid grid-cols-1 place-items-center minm sm:place-items-stretch lg:grid-cols-2 xl:grid-cols-3 gap-4  flex-4/5">
+         <section id="products-section" class="grid grid-cols-1 place-items-center mobileItemsStretch sm:place-items-stretch lg:grid-cols-2 xl:grid-cols-3 gap-4  flex-4/5">
 
             <!-- cart 1 -->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -113,8 +120,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">জাতীয় জরুরি সেবা</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">National Emergency</p>
                     <h1 class="text-3xl font-bold mb-0.5">999</h1>
@@ -134,7 +142,8 @@
 
             <!-- cart 2 -->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -146,8 +155,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">পুলিশ</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">police</p>
                     <h1 class="text-3xl font-bold mb-0.5">8484</h1>
@@ -167,7 +177,8 @@
 
             <!-- cart 3 -->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -179,8 +190,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">ফায়ার সার্ভিস</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Fire Service</p>
                     <h1 class="text-3xl font-bold mb-0.5">1510</h1>
@@ -200,7 +212,8 @@
 
             <!-- cart 4-->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -212,8 +225,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">অ্যাম্বুলেন্স</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Ambulance</p>
                     <h1 class="text-3xl font-bold mb-0.5">1994-999999</h1>
@@ -234,7 +248,8 @@
              
              <!-- cart 5-->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -246,8 +261,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">ব্র্যাক</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Brac</p>
                     <h1 class="text-3xl font-bold mb-0.5">16445</h1>
@@ -267,7 +283,8 @@
             
             <!-- cart 6-->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -279,8 +296,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">নারী ও শিশু সহায়তা</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Women & Child Helpline</p>
                     <h1 class="text-3xl font-bold mb-0.5">109</h1>
@@ -300,7 +318,8 @@
 
              <!-- cart 7 -->
               <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                 <!-- emergency icon and heart icon -->
+
+                 <!-- service icon and heart icon -->
                  <div class="flex items-center justify-between ">
                      <!-- img -->
                      <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -312,8 +331,9 @@
                          <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                      </div>
                  </div>
+
                  <!-- card content -->
-                  <div>
+                  <div class="card">
                      <h2 class="font-bangla text-2xl font-bold">দুদক</h2>
                      <p class="text-[#5C5C5C] text-lg mb-6">Anti-Corruption</p>
                      <h1 class="text-3xl font-bold mb-0.5">106</h1>
@@ -333,7 +353,8 @@
 
             <!-- cart 8 -->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -345,8 +366,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">বাংলাদেশ রেলওয়ে</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Bangladesh Railway</p>
                     <h1 class="text-3xl font-bold mb-0.5">163</h1>
@@ -367,7 +389,8 @@
 
             <!-- cart 9 -->
              <div class="max-w-[430px] rounded-xl p-7 bg-white font-roboto space-y-4 shadow">
-                <!-- emergency icon and heart icon -->
+
+                <!-- service icon and heart icon -->
                 <div class="flex items-center justify-between ">
                     <!-- img -->
                     <figure class="w-[60px] h-[60px] bg-[#FFE3E2] flex items-center justify-center rounded-2xl">
@@ -379,8 +402,9 @@
                         <i id="heart-icon" class="fa-regular fa-heart text-2xl cursor-pointer"></i>
                     </div>
                 </div>
+                
                 <!-- card content -->
-                 <div>
+                 <div class="card">
                     <h2 class="font-bangla text-2xl font-bold">বিদ্যুৎ বিভ্রাট</h2>
                     <p class="text-[#5C5C5C] text-lg mb-6">Electricity Outage</p>
                     <h1 class="text-3xl font-bold mb-0.5">16216</h1>
@@ -407,20 +431,12 @@
             <div class="flex items-center justify-between gap-2.5">
                 <h3 class="text-xl font-medium "><i class="fa-regular fa-clock text-2xl mr-0.5"></i>Call History</h3>
 
-                <button class="bg-[#00A63E] rounded-4xl text-white py-3.5 px-9 cursor-pointer text-[1rem] font-semibold">Clear</button>
+                <button id="clear-btn" class="bg-[#00A63E] rounded-4xl text-white py-3.5 px-9 cursor-pointer text-[1rem] font-semibold">Clear</button>
             </div>
 
             <!-- history list  -->
-             <ul class="mt-4">
-                <li class="flex items-center justify-between text-lg text-black p-4 rounded-lg bg-[#FAFAFA] mb-2">
-                    <div>
-                        <h4 class="font-bangla">জাতীয় জরুরি সেবা</h4>
-                        <p class="text-[#5C5C5C]">999</p>
-                    </div>
-                    <div>
-                        11:36:25
-                    </div>
-                </li>
+             <ul id="history-container" class="mt-4">
+                
              </ul>
           </aside>
      </main>

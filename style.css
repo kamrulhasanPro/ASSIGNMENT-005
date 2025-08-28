@@ -12,8 +12,9 @@
       font-family: "Roboto", sans-serif;
 }
 
+/* less than 500px mobile device card section responsive */
 @media only screen  and (max-width:500px) {
-    .minm{
+    .mobileItemsStretch{
         place-items: stretch;
     }
 }

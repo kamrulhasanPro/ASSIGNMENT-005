@@ -1,78 +1,103 @@
+// id make reusable function
 function makeId(id){
     return document.getElementById(id)
 }
 
-// heart count
+// by class name reusable function
+function makeClassName(className){
+    return document.getElementsByClassName(className)
+}
+
+
+// add delegation click
 makeId('products-section').addEventListener('click', (event)=>{
 
     // heart increase
     if(event.target.id === 'heart-icon'){
 
-        let heart = document.getElementsByClassName('heart-btn');
-        for(let i of heart){
-            i.innerText = Number(i.innerText) + 1;
+        let hearts = makeClassName('heart-btn');
+        for(let heart of hearts){
+            heart.innerText = Number(heart.innerText) + 1;
         }
     }
 
 
     
     // copy count and alert and copy number in clipboard
-    if(event.target.id === 'copy-btn' || event.target.parentNode.id === 'copy-btn'){
+    const copyBtn = event.target.closest('#copy-btn')
+    if(copyBtn){
         
         // alert
-        alert('The number is copy')
+        alert('🧾The number has been copied.')
         
         // copy number
-        if(event.target.id === 'copy-btn'){
-            const copyNumber = event.target.parentNode.parentNode.children[2].innerText.trim();
+            const copyCard = copyBtn.closest('.card')        
+            const copyNumber = copyCard.children[2].innerText;
             navigator.clipboard.writeText(copyNumber)
-        }else if(event.target.parentNode.id === 'copy-btn'){
-            console.log('hello');
-            const copyNumber = event.target.parentNode.parentNode.parentNode.children[2].innerText.trim();
-            navigator.clipboard.writeText(copyNumber)
-        }
 
+        
         // how may copy count 
-        let copy = document.getElementsByClassName('copy-inner');
-        for(let i of copy){
-            i.innerText = Number(i.innerText) + 1;
+        let copies = makeClassName('copy-inner');
+        for(let copy of copies){
+            copy.innerText = Number(copy.innerText) + 1;
         }
     }    
     
     
-    // call button click 
-    const callBtn = event.target.id === 'call-btn';
-    const callIconParent = event.target.parentNode.id === 'call-btn'; 
-    if( callBtn||callIconParent ){
-        
+
+    // call button click coin reduce and history add 
+    const callBtn = event.target.closest('#call-btn')
+    if(callBtn){
         
         // coin 
-        let coins = document.getElementsByClassName('coin')
-        // console.log(coins);
+        let coins = makeClassName('coin')
         for(let coin of coins){
-            // console.log(coin.innerText);
+            //validation check
             if(Number(coin.innerText) < 20){
-                    alert('❌ else not allowed because your coin not enough')
+                    alert('❌ Not allowed, because your coin not enough')
                     return
                 }
             
             coin.innerText = Number(coin.innerText) - 20;
         }
-        let title = event.target.parentNode.parentNode.parentNode.children[0].innerText;
+
+        // call alert
+        let card = callBtn.closest('.card')
+        let title = card.children[0].innerText;
+        let number = card.children[2].innerText;
         
-        let number = event.target.parentNode.parentNode.parentNode.children[2];
-        if(callIconParent){
-            alert(`📞 This title ${title} and this number ${number.innerText}`)
-        }
-        else if(callBtn){
-            title = event.target.parentNode.parentNode.children[0].innerText;
-            number = event.target.parentNode.parentNode.children[2].innerText
-            
-            alert(`📞 This title ${title} and this number ${number}`)
+        if(callBtn){
+            alert(`📞 Calling ${title} at ${number}`)
         }
         
+        // call history 
+        let currentTime = new Date().toLocaleTimeString()
+        let listHistory = document.createElement('li')
+        listHistory.innerHTML = `
+        <div class="flex items-center justify-between text-lg text-black p-4 rounded-lg bg-[#FAFAFA] mb-2">
+                        <div>
+                            <h4 class="font-bangla">${title}</h4>
+                            <p class="text-[#5C5C5C]">${number}</p>
+                        </div>
+                        <div>
+                            ${currentTime}
+                        </div>
+        </div>
+        `
 
-
+        // append list history in parent 
+        makeId('history-container').appendChild(listHistory)
 
     }
+
 });
+
+
+// click clear button then clean call history
+makeId('clear-btn').addEventListener('click', function(){
+    
+    // call history parent 
+    const parent = makeId('history-container');
+    parent.innerHTML = null;
+
+})
